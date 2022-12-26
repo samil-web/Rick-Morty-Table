@@ -12,6 +12,7 @@
     width: 40px;
     height: 40px;
     text-align: center;
+    border-color: #BAC6D8;
   }
 
   li>a{
@@ -23,20 +24,27 @@
   }
 
   ul.pagination li a.page-link{ 
+    width: 40px;
+    height: 40px;
     color: black;
   }
 
   ul.pagination li.active a.page-link{
-    text-decoration: none;
-    color: black;
     background-color:#EEF1F5;
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
+    border-color: #BAC6D8;
   }
 
 ul{
-    margin-right: 130px;    
+    margin-right: 133px;    
+}
+.pagination > li > a:focus{
+  color: #BAC6D8;
+}
+.pagination.justify-content-end.my-4.gap-4{
+  margin-top: 43px!important;
+  margin-bottom: 54px!important;
+  border-color: #BAC6D8;
+  --bs-pagination-focus-color:#BAC6D8;
 }
 
 

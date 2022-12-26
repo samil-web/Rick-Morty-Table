@@ -1,11 +1,13 @@
 thead {display: table-header-group;}
+.table-div{
+    max-height: 457px;
+}
 table {
     display: flex;
-
+    /* height: 457px; */
     align-items: center;
     justify-content: center;
     border-collapse: collapse;
-    width: 100%;
     width: 1161px;
 }
 

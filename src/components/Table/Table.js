@@ -9,32 +9,32 @@ const Table = ({ results }) => {
       let { id, image, name, status, origin, gender, species } = x;
 
       return (
-        // <div >
+        <div >
 
-        // </div>
-        <table style={{ backgroundColor: status === 'Dead' ? '#F6F8FA' : 'white' }}
 
-        >
-          <tbody
+          <table style={{ backgroundColor: status === 'Dead' ? '#F6F8FA' : 'white' }}
 
           >
+            <tbody
 
-            <tr key={id}>
-              <td >{name}
-                <br></br>
-                {species}
-              </td>
-              <td>
-                <img src={image} alt="" height={100} />
-              </td>
+            >
+              <tr key={id}>
+                <td >{name}
+                  <br></br>
+                  {species}
+                </td>
+                <td>
+                  <img src={image} alt="" height={100} />
+                </td>
 
-              <td>{origin.name}</td>
-              <td>{gender}</td>
-              <td>{status}</td>
-            </tr>
+                <td>{origin.name}</td>
+                <td>{gender}</td>
+                <td>{status}</td>
+              </tr>
 
-          </tbody>
-        </table>
+            </tbody>
+          </table>
+        </div>
       );
     });
   }
