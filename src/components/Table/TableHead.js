@@ -1,7 +1,8 @@
 import "./TableHead.css"
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 const TableHead = () => {
     return (
-        <table>
+        <table className="tablehead">
             <tbody>
                 <td>Name</td>
                 <td>Avatar</td>

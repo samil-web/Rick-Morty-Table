@@ -11,9 +11,18 @@ th {
     text-align: left;    
 }
 thead {display: table-header-group;} */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
+.tablehead{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+
+}
 table {
     display: flex;
-    
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
     align-items: center;
     justify-content: center;
     border-collapse: collapse;
@@ -28,6 +37,8 @@ td{
     text-align: left;
 }
 td:nth-child(1){
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
     border-right:1px solid white;
 }
 td:nth-child(2){
@@ -40,6 +51,11 @@ td:nth-child(3){
 td:nth-child(4){
     border-right:1px solid white;
 }
+td:nth-child(5){
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;;
+}
+
 img{
     max-height: 50px;
     max-width: 50px;

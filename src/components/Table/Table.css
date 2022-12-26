@@ -30,6 +30,9 @@ td:nth-child(3){
 td:nth-child(4){
     border-right:1px solid white;
 }
+td:nth-child(5){
+font-size: 14px;
+}
 img{
     max-height: 50px;
     max-width: 50px;
