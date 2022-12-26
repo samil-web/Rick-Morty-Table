@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Rick-Morty-Table/static/css/main.0130fac3.chunk.css",
-    "main.js": "/Rick-Morty-Table/static/js/main.ff4dd584.chunk.js",
-    "main.js.map": "/Rick-Morty-Table/static/js/main.ff4dd584.chunk.js.map",
+    "main.css": "/Rick-Morty-Table/static/css/main.4c9f0977.chunk.css",
+    "main.js": "/Rick-Morty-Table/static/js/main.c07772b1.chunk.js",
+    "main.js.map": "/Rick-Morty-Table/static/js/main.c07772b1.chunk.js.map",
     "runtime-main.js": "/Rick-Morty-Table/static/js/runtime-main.730cbc64.js",
     "runtime-main.js.map": "/Rick-Morty-Table/static/js/runtime-main.730cbc64.js.map",
     "static/css/2.f26e749f.chunk.css": "/Rick-Morty-Table/static/css/2.f26e749f.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.246d5a10.chunk.js.map": "/Rick-Morty-Table/static/js/2.246d5a10.chunk.js.map",
     "index.html": "/Rick-Morty-Table/index.html",
     "static/css/2.f26e749f.chunk.css.map": "/Rick-Morty-Table/static/css/2.f26e749f.chunk.css.map",
-    "static/css/main.0130fac3.chunk.css.map": "/Rick-Morty-Table/static/css/main.0130fac3.chunk.css.map",
+    "static/css/main.4c9f0977.chunk.css.map": "/Rick-Morty-Table/static/css/main.4c9f0977.chunk.css.map",
     "static/js/2.246d5a10.chunk.js.LICENSE.txt": "/Rick-Morty-Table/static/js/2.246d5a10.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.730cbc64.js",
     "static/css/2.f26e749f.chunk.css",
     "static/js/2.246d5a10.chunk.js",
-    "static/css/main.0130fac3.chunk.css",
-    "static/js/main.ff4dd584.chunk.js"
+    "static/css/main.4c9f0977.chunk.css",
+    "static/js/main.c07772b1.chunk.js"
   ]
 }
