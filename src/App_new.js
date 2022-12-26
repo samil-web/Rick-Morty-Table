@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App_new.css";
 import "../src/components/Table/Table.css"
 // import "../src/components/Search/search.css"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Search from "./components/Search/Search";
 import Pagination from "./components/Pagination/Pagination";
 import Filter from "./components/Filter/Filter";
@@ -11,13 +11,7 @@ import TableHead from "./components/Table/TableHead";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-      </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
+    <Home />
   );
 }
 
