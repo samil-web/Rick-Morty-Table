@@ -44,6 +44,9 @@ ul{
   margin-top: 43px!important;
   margin-bottom: 54px!important;
   border-color: #BAC6D8;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
   --bs-pagination-focus-color:#BAC6D8;
 }
 

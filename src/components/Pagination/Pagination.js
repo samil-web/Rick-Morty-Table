@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
 import "./pagination.css"
-const Pagination = ({ pageNumber, info, updatePageNumber }) => {
+
+const Pagination = ({ pageNumber, updatePageNumber, pageCount }) => {
   let pageChange = (data) => {
     updatePageNumber(data.selected + 1);
   };
@@ -34,6 +35,7 @@ const Pagination = ({ pageNumber, info, updatePageNumber }) => {
             }
           }
         `}
+
       </style>
       <ReactPaginate
         className="pagination justify-content-end my-4 gap-4"
@@ -43,12 +45,12 @@ const Pagination = ({ pageNumber, info, updatePageNumber }) => {
         previousClassName="btn btn-primary fs-5 prev"
         nextClassName="btn btn-primary fs-5 next"
         activeClassName="active"
-        marginPagesDisplayed={width < 576 ? 1 : 2}
-        pageRangeDisplayed={width < 576 ? 1 : 2}
-        pageCount={info?.pages}
+        marginPagesDisplayed={0}
+        pageRangeDisplayed={pageCount}
         onPageChange={pageChange}
         pageClassName="page-item"
         pageLinkClassName="page-link"
+        pageCount={pageCount}
       />
     </>
   );

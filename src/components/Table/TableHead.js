@@ -4,11 +4,10 @@ const TableHead = () => {
     return (
         <table className="tablehead">
             <tbody>
+                <td>ID</td>
                 <td>Name</td>
-                <td>Avatar</td>
-                <td>Origin</td>
-                <td>Gender</td>
-                <td>Status</td>
+                <td>Year</td>
+                <td>All info</td>
             </tbody>
         </table>
     )

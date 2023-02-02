@@ -1,42 +1,38 @@
 import "./Table.css"
 // import TableHead from "./TableHead";
-import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
-import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 // import Button from '@mui/material/Button'
 import React from "react";
 // import { Button } from "bootstrap";
-const Table = ({ results }) => {
+const Table = ({ filter, tabledata, openModal }) => {
   let display;
+  const perPage = 5
+  // let currentPage = (pagenumber - 1) * perPage
+  // find total number of pages you need for the data and then render it 
+  if (tabledata) {
+    if (filter) {
 
-  if (results) {
-    display = results.map((x) => {
-      let { id, image, name, status, origin, gender, species } = x;
+      const filteredData = tabledata.filter(item =>
+        item.id.toString().includes(filter)
+      );
+      tabledata = filteredData
+    }
+    display = tabledata.slice(0, perPage).map((data) => {
+      let { id, name, year, color } = data;
 
       return (
         <div >
 
 
-          <table style={{ backgroundColor: status === 'Dead' ? '#F6F8FA' : 'white' }}
-
-          >
+          <table>
             <tbody
-
+              style={{ backgroundColor: `${color}` }}
             >
               <tr key={id}>
-                <td style={{ color: name === 'unknown' ? "#5F6569" : "#1A2328" }}>{name}
-                  <br></br>
-                  {species}
+                <td>{id}</td>
+                <td>{name}
                 </td>
-                <td>
-                  <img src={image} alt="" height={100} />
-                </td>
-
-                <td style={{ color: origin.name === 'unknown' ? "#5F6569" : "#1A2328" }}>{origin.name}</td>
-                <td style={{ color: gender === 'unknown' ? "#5F6569" : "#1A2328" }}>{gender}</td>
-                <td style={{ color: status === 'unknown' ? "#5F6569" : "#1A2328" }}>
-                  {status === "Dead" ? <ErrorOutlineIcon style={{ fill: "red", fontSize: 18 }} /> : status === "unknown" ? <HelpOutlineIcon style={{ fill: "gray", fontSize: 18 }} /> : <CheckCircleOutlineIcon style={{ fill: "green", fontSize: 18 }} />}
-                  {status}</td>
+                <td>{year}</td>
+                <td><button onClick={() => openModal(data)}>More...</button></td>
               </tr>
             </tbody>
           </table>

@@ -1,19 +1,16 @@
 import React from "react";
 import "./search.css"
-const Search = ({ setSearch, updatePageNumber }) => {
+const Search = ({ setSearch }) => {
   return (
     <form
     >
       <input className="search"
         onChange={(e) => {
-          updatePageNumber(1);
           setSearch(e.target.value);
         }}
         placeholder="Search"
-
-        type="text"
+        type="number"
       />
-
     </form>
   );
 };
