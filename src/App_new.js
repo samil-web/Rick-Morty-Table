@@ -29,14 +29,7 @@ const Home = () => {
 
   useEffect(() => {
     (async function () {
-      let data = await fetch(api).then(res => {
-        if (res.ok) {
-          res.json()
-        }
-        else {
-          return res.json().then(json => Promise.reject(json))
-        }
-      });
+      let data = await fetch(api).then(res => res.json());
       setDataLen(data.total)
       updateFetchedData(data);
     })();
